@@ -64,8 +64,18 @@
 	padding: 0;
 }
 .comments-container ul li{
-	list-style: none;
 	height: 80px;
+	list-style: none;
+	display: none;
+}
+.comments-container button{
+	margin: 15px auto;
+	background: none;
+	border: none;
+	display: block;
+}
+.comments-container button:hover{
+	color: #d8d8d8;
 }
 .comments-container ul li img{
 	border: 3px solid #363636;
@@ -73,12 +83,18 @@
 .comments-container ul li.online img{
 	border: 3px solid #1182f5;
 }
+.comment-wrapper{
+	padding: 25px 0;
+	border-bottom: 1px solid #d8d8d8;
+}
+.comments-container ul li:last-of-type .comment-wrapper, .reply .comment-wrapper{
+	border-bottom: none;
+}
 .comment .avatar-box{
 	padding: 0;
 }
 .comment .message-box{
 	background: #1182f5;
-	margin-bottom: 50px;
 }
 .comment .message-box h6{
 	padding: 5px;
