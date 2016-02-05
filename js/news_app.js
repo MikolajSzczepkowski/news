@@ -1,13 +1,14 @@
 $(function (){
-	$("#comments").find("li:lt(3)").show();
+	$("#comments .reply").find("li:lt(1)").show();
+	$("#comments .reply").prev().find(".comment-wrapper").addClass("no-boarder");
 	$(document).on("click", "#showMoreComments", function(){
-		$("#comments").find("li").show();
+		$("#comments .reply").find("li").show();
 		$(this).text("hide");
 		$(this).attr("id", "hideComments");
 	});
 	$(document).on("click", "#hideComments", function(){
-		$("#comments").find("li").hide();
-		$("#comments").find("li:lt(3)").show();
+		$("#comments .reply").find("li").hide();
+		$("#comments .reply").find("li:lt(1)").show();
 		$(this).text("show more");
 		$(this).attr("id", "showMoreComments");
 	});

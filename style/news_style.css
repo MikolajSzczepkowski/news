@@ -66,6 +66,8 @@
 .comments-container ul li{
 	height: 80px;
 	list-style: none;
+}
+.comments-container .reply li{
 	display: none;
 }
 .comments-container button{
@@ -87,9 +89,13 @@
 	padding: 25px 0;
 	border-bottom: 1px solid #d8d8d8;
 }
-.comments-container ul li:last-of-type .comment-wrapper, .reply .comment-wrapper{
+.reply{
+	border-bottom: 1px solid #d8d8d8;
+}
+.comments-container ul li:last-of-type .comment-wrapper, .reply .comment-wrapper, .no-boarder{
 	border-bottom: none;
 }
+
 .comment .avatar-box{
 	padding: 0;
 }
