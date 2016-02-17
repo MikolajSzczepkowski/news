@@ -12,4 +12,12 @@ $(function (){
 		$(this).text("show more");
 		$(this).attr("id", "showMoreComments");
 	});
+
+	$(document).on("click", ".message-box input", function(){
+		if (!$(this).data("clicked") === true) {
+			$(this).data("clicked", true);
+			var container = $(this).parents(".comment-wrapper");
+			$("#replyForm").clone().appendTo(container).show();
+		}
+	});
 });

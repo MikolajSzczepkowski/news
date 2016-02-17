@@ -157,6 +157,15 @@
 .leave-comment input:hover{
 	background: #363636;
 }
+.reply-form{
+    padding: 0;
+    margin-top: 10px;
+    float: right;
+    display: none;
+}
+.reply-form textarea{
+	height: 80px;
+}
 @media screen and (min-width: 768px){
 	.news-container-wrapper{
 		border-right: 1px solid #d8d8d8;
